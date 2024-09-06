@@ -116,5 +116,22 @@ public class Main {
             haslo = haslo + cyfry.charAt(losowa);
         }
         System.out.println("Wygenerowane haslo: "+haslo);
+        String newHaslo ="";
+        System.out.println("Czy wylosowac ponownie? 1/2  1-tak  2-nie");
+        int again = klawiatura.nextInt();
+        if(again == 1){
+            for (int i = 0; i < 5; i++) {
+                losowa = (int) (Math.random() * maleLitery.length());
+                newHaslo = newHaslo + maleLitery.charAt(losowa);
+                losowa = (int) (Math.random() * duzeLitery.length());
+                newHaslo = newHaslo + duzeLitery.charAt(losowa);
+                losowa = (int) (Math.random() * znakiSpecjalne.length());
+                newHaslo = newHaslo + znakiSpecjalne.charAt(losowa);
+                losowa = (int) (Math.random() * cyfry.length());
+                newHaslo = newHaslo + cyfry.charAt(losowa);
+            }
+            System.out.println("Nowe hasło "+newHaslo);
+        }
+
    }
 }

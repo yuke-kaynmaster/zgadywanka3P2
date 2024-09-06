@@ -3,7 +3,5 @@ public class Main {
 
         System.out.println("Hello world!");
         System.out.println("siemano!");
-        System.out.println("cos!");
-        System.out.println("gitara!");
     }
 }

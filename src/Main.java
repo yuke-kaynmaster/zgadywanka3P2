@@ -56,6 +56,13 @@ public class Main {
                 System.out.println("Słabo");
                 break;
         }
+        //wyrażenie switch
+        System.out.println(switch (roznica){
+            case 0->"Bardzo dobrze";
+            case 1->"Dobrze";
+            case 2->"Dość dobrze";
+            default -> "Słabo";
+        });
 
     }
 }

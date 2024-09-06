@@ -63,7 +63,7 @@ public class Main {
             case 2->"Dość dobrze";
             default -> "Słabo";
         });
-
+        /*
         //zgadywanie 10 razy
         for (int i = 0; i < 10; i++) {
             System.out.println("Podaj liczbę");
@@ -72,6 +72,20 @@ public class Main {
                 System.out.println("Wygrałeś nowego Iphone 16S+");
                 break;
             }
+        }
+         */
+        //tak długo aż sie uda
+        System.out.println("Podaj liczbę");
+        wpisanaLiczba = klawiatura.nextInt();
+        while (wpisanaLiczba != wylosowanaLiczba){
+            if (wpisanaLiczba > wylosowanaLiczba) {
+                System.out.println("wpisano za duzo");
+            }
+            else {
+                System.out.println("wpisano za malo");
+            }
+            System.out.println("Podaj liczbe");
+            wpisanaLiczba = klawiatura.nextInt();
         }
 
     }

@@ -63,7 +63,6 @@ public class Main {
             case 2->"Dość dobrze";
             default -> "Słabo";
         });
-        /*
         //zgadywanie 10 razy
         for (int i = 0; i < 10; i++) {
             System.out.println("Podaj liczbę");
@@ -73,7 +72,6 @@ public class Main {
                 break;
             }
         }
-         */
         //tak długo aż sie uda
         System.out.println("Podaj liczbę");
         wpisanaLiczba = klawiatura.nextInt();
@@ -87,6 +85,16 @@ public class Main {
             System.out.println("Podaj liczbe");
             wpisanaLiczba = klawiatura.nextInt();
         }
-
-    }
+        do{
+            System.out.println("Podaj liczbe");
+            wpisanaLiczba = klawiatura.nextInt();
+            if(wpisanaLiczba>wylosowanaLiczba){
+                System.out.println("za duza");
+            }
+            else if(wpisanaLiczba<wylosowanaLiczba){
+                System.out.println("za mala");
+        }   }
+        while (wpisanaLiczba != wylosowanaLiczba);
+        System.out.println("wygrana");
+   }
 }

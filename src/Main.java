@@ -38,5 +38,13 @@ public class Main {
         //wyrażenie warunkowe zwraca wartość
         int roznica = wpisanaLiczba > wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
         System.out.println("Pomyłka o "+roznica);
+        System.out.println("Wylosowana liczba: "+wylosowanaLiczba);
+
+        //dzielenie całkowite
+        roznica = roznica/10;
+        switch  (roznica){
+
+        }
+
     }
 }

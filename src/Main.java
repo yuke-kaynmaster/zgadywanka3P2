@@ -27,5 +27,12 @@ public class Main {
         System.out.println("Podaj liczbę");
         int wpisanaLiczba = klawiatura.nextInt();
 
+        //instrukcja warunkowa
+        if (wpisanaLiczba == wylosowanaLiczba){
+            System.out.println("Zgadłeś!");
+        }
+        else{
+            System.out.println("Sory, nie zgadłeś");
+        }
     }
 }

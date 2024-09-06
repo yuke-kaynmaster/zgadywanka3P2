@@ -34,5 +34,9 @@ public class Main {
         else{
             System.out.println("Sory, nie zgadłeś");
         }
+        //określić jak duża różnica pomiędzy wpisaną i wylosowaną
+        //wyrażenie warunkowe zwraca wartość
+        int roznica = wpisanaLiczba > wylosowanaLiczba ? wpisanaLiczba - wylosowanaLiczba : wylosowanaLiczba - wpisanaLiczba;
+        System.out.println("Pomyłka o "+roznica);
     }
 }

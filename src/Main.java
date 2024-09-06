@@ -1,3 +1,6 @@
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -10,7 +13,19 @@ public class Main {
         typy proste (pisane zawsze małą literą) przchowują tylko wartość
         logiczne boolean
         całkowite byte short int long
+        rzeczywiste float double
+        znakowy char
+
+        typy złożone obiekty wlasnosci i metody
+        String Integer Kosc
          */
         System.out.println(wylosowanaLiczba);
+
+
+        //wczytywanie z klawy
+        Scanner klawiatura = new Scanner(System.in);
+        System.out.println("Podaj liczbę");
+        int wpisanaLiczba = klawiatura.nextInt();
+
     }
 }

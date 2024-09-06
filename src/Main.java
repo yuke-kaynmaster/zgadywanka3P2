@@ -43,7 +43,18 @@ public class Main {
         //dzielenie całkowite
         roznica = roznica/10;
         switch  (roznica){
-
+            case 0:
+                System.out.println("Bardzo blisko");
+                break;
+            case 1:
+                System.out.println("Blisko");
+                break;
+            case 2:
+                System.out.println("Dość blisko");
+                break;
+            default:
+                System.out.println("Słabo");
+                break;
         }
 
     }
